@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="dobText" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library_pkg.NewMemberFXController">
+   <children>
+      <Label layoutX="100.0" layoutY="52.0" text="Name:" />
+      <TextField fx:id="nameText" layoutX="176.0" layoutY="48.0" prefWidth="250.0" />
+      <TextField fx:id="addressText" layoutX="176.0" layoutY="94.0" prefWidth="250.0" />
+      <TextField fx:id="emailText" layoutX="176.0" layoutY="143.0" prefWidth="250.0" />
+      <DatePicker fx:id="dobDate" layoutX="176.0" layoutY="235.0" />
+      <TextField fx:id="ssnText" layoutX="176.0" layoutY="188.0" prefWidth="250.0" />
+      <Button layoutX="230.0" layoutY="341.0" mnemonicParsing="false" onAction="#saveMember_click" text="Save" />
+      <Label layoutX="94.0" layoutY="98.0" text="Address:" />
+      <Label layoutX="101.0" layoutY="147.0" text="Email:" />
+      <Label layoutX="104.0" layoutY="192.0" text="SSN:" />
+      <Label layoutX="83.0" layoutY="239.0" text="Date of Birth:" />
+      <TextField fx:id="memtypeText" layoutX="176.0" layoutY="284.0" prefWidth="250.0" />
+      <Label layoutX="69.0" layoutY="288.0" text="Membership Type:" />
+   </children>
+</AnchorPane>

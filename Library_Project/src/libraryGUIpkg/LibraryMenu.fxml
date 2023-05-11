@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library_pkg.LibraryMenuController">
+   <children>
+      <Button fx:id="newMember_btn" layoutX="50.0" layoutY="31.0" mnemonicParsing="false" onAction="#newMember_click" prefHeight="25.0" prefWidth="500.0" text="New Membership" />
+      <Button layoutX="50.0" layoutY="62.0" mnemonicParsing="false" onAction="#newCollection_click" prefWidth="500.0" text="New Collection" />
+      <Button layoutX="50.0" layoutY="94.0" mnemonicParsing="false" onAction="#removeMember_click" prefWidth="500.0" text="Remove Membership" />
+      <Button layoutX="50.0" layoutY="192.0" mnemonicParsing="false" onAction="#borrowItem_click" prefWidth="500.0" text="Borrow Item" />
+      <Button layoutX="50.0" layoutY="125.0" mnemonicParsing="false" onAction="#removeItem_click" prefWidth="500.0" text="Remove Item from Collection" />
+      <Button layoutX="50.0" layoutY="158.0" mnemonicParsing="false" onAction="#newEmployee_click" prefWidth="500.0" text="New Employee" />
+      <Button layoutX="50.0" layoutY="226.0" mnemonicParsing="false" onAction="#returnItem_click" prefWidth="500.0" text="Return Item" />
+      <Button layoutX="50.0" layoutY="260.0" mnemonicParsing="false" onAction="#checkOverdues_click" prefWidth="500.0" text="Check Overdues" />
+      <Button layoutX="50.0" layoutY="295.0" mnemonicParsing="false" onAction="#editInformation_click" prefWidth="500.0" text="Edit Information" />
+      <Button layoutX="50.0" layoutY="329.0" mnemonicParsing="false" onAction="#quit_click" prefWidth="500.0" text="Quit" />
+   </children>
+</AnchorPane>
