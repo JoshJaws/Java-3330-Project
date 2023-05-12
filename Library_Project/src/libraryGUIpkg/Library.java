@@ -1,5 +1,5 @@
 
-package library_pkg;
+package libraryGUIpkg;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

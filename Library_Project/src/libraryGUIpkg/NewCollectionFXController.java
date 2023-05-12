@@ -9,33 +9,25 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 
 /**
  * FXML Controller class
  *
  * @author jjaws
  */
-public class NewMemberFXController implements Initializable {
+public class NewCollectionFXController implements Initializable {
 
     @FXML
-    private AnchorPane dobText;
+    private TextField collectionText;
     @FXML
-    private TextField nameText;
+    private TextField titleText;
     @FXML
-    private TextField addressText;
+    private TextField ISBNText;
     @FXML
-    private TextField emailText;
+    private TextField sectionText;
     @FXML
-    private DatePicker dobDate;
-    @FXML
-    private TextField ssnText;
-    @FXML
-    private TextField memtypeText;
-
+    private TextField priceText;
 
     /**
      * Initializes the controller class.
@@ -46,7 +38,7 @@ public class NewMemberFXController implements Initializable {
     }    
 
     @FXML
-    private void saveMember_click(ActionEvent event) {
+    private void saveItem_click(ActionEvent event) {
     }
     
 }

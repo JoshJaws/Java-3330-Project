@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="libraryGUIpkg.NewCollectionFXController">
+   <children>
+      <TextField fx:id="collectionText" layoutX="176.0" layoutY="80.0" prefWidth="250.0" />
+      <TextField fx:id="titleText" layoutX="176.0" layoutY="137.0" prefWidth="250.0" />
+      <TextField fx:id="ISBNText" layoutX="176.0" layoutY="188.0" prefWidth="250.0" />
+      <TextField fx:id="sectionText" layoutX="176.0" layoutY="242.0" prefWidth="250.0" />
+      <Label layoutX="176.0" layoutY="105.0" text="(Books--B   DVD---D   Journal--J   Newspaper--N)" />
+      <TextField fx:id="priceText" layoutX="176.0" layoutY="303.0" prefWidth="250.0" />
+      <Label layoutX="176.0" layoutY="267.0" text="(Art--A   Science--S   Law--L   Newspaper--N)" />
+      <Label layoutX="71.0" layoutY="30.0" text="Enter new item information:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="84.0" text="Item Type:" />
+      <Label layoutX="73.0" layoutY="141.0" text="Item Title:" />
+      <Label layoutX="71.0" layoutY="192.0" text="Item ISBN:" />
+      <Label layoutX="65.0" layoutY="246.0" text="Item Section:" />
+      <Label layoutX="72.0" layoutY="307.0" text="Item Price:" />
+      <Button layoutX="224.0" layoutY="350.0" mnemonicParsing="false" onAction="#saveItem_click" text="Save" />
+   </children>
+</AnchorPane>

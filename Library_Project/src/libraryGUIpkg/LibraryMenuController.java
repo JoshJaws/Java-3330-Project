@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package library_pkg;
+package libraryGUIpkg;
 
 import java.io.IOException;
 import java.net.URL;
@@ -57,11 +57,42 @@ public class LibraryMenuController implements Initializable {
     }
 
     @FXML
-    private void newCollection_click(ActionEvent event) {
+    private void newCollection_click(ActionEvent event) throws IOException {
+        Parent root;
+        try {
+            root = FXMLLoader.load(getClass().getResource("NewCollectionFX.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("New Collection Form");
+            stage.setScene(new Scene(root));
+            // Used to ensure the main menu cannot be clicked once new menu is opened.
+            stage.initModality(Modality.WINDOW_MODAL);
+            // Do not believe it matters what kind of button you use, as long as it is on the main menu.
+            stage.initOwner(newMember_btn.getScene().getWindow());
+            stage.show();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @FXML
     private void removeMember_click(ActionEvent event) {
+        Parent root;
+        try {
+            root = FXMLLoader.load(getClass().getResource("RemoveMemberFX.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Remove Member Form");
+            stage.setScene(new Scene(root));
+            // Used to ensure the main menu cannot be clicked once new menu is opened.
+            stage.initModality(Modality.WINDOW_MODAL);
+            // Do not believe it matters what kind of button you use, as long as it is on the main menu.
+            stage.initOwner(newMember_btn.getScene().getWindow());
+            stage.show();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

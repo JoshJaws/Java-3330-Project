@@ -9,33 +9,17 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 
 /**
  * FXML Controller class
  *
  * @author jjaws
  */
-public class NewMemberFXController implements Initializable {
+public class RemoveMemberFXController implements Initializable {
 
-    @FXML
-    private AnchorPane dobText;
     @FXML
     private TextField nameText;
-    @FXML
-    private TextField addressText;
-    @FXML
-    private TextField emailText;
-    @FXML
-    private DatePicker dobDate;
-    @FXML
-    private TextField ssnText;
-    @FXML
-    private TextField memtypeText;
-
 
     /**
      * Initializes the controller class.
@@ -46,7 +30,7 @@ public class NewMemberFXController implements Initializable {
     }    
 
     @FXML
-    private void saveMember_click(ActionEvent event) {
+    private void removeMember_click(ActionEvent event) {
     }
     
 }
