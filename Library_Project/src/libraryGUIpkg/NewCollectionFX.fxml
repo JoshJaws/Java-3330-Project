@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="libraryGUIpkg.NewCollectionFXController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryGUIpkg.NewCollectionFXController">
    <children>
       <TextField fx:id="collectionText" layoutX="176.0" layoutY="80.0" prefWidth="250.0" />
       <TextField fx:id="titleText" layoutX="176.0" layoutY="137.0" prefWidth="250.0" />
@@ -27,5 +26,6 @@
       <Label layoutX="65.0" layoutY="246.0" text="Item Section:" />
       <Label layoutX="72.0" layoutY="307.0" text="Item Price:" />
       <Button layoutX="216.0" layoutY="361.0" mnemonicParsing="false" onAction="#saveItem_click" text="Save Item" />
+      <Label fx:id="displayLabel" layoutX="287.0" layoutY="365.0" />
    </children>
 </AnchorPane>

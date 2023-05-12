@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="libraryGUIpkg.ReturnItemFXController">
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryGUIpkg.ReturnItemFXController">
     <children>
       <TextField fx:id="itemNameText" layoutX="126.0" layoutY="138.0" prefWidth="225.0" />
       <TextField fx:id="sectionText" layoutX="126.0" layoutY="187.0" prefWidth="225.0" />
@@ -21,5 +21,6 @@
          </font>
       </Label>
       <Button layoutX="149.0" layoutY="261.0" mnemonicParsing="false" onAction="#ReturnItem_click" text="Return Item" />
+      <Label fx:id="displayL" layoutX="231.0" layoutY="265.0" />
    </children>
 </AnchorPane>

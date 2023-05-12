@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="libraryGUIpkg.NewEmployeeFXController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryGUIpkg.NewEmployeeFXController">
     <children>
       <Label layoutX="56.0" layoutY="52.0" text="Employee Name:" />
       <TextField fx:id="nameText" layoutX="176.0" layoutY="48.0" prefWidth="250.0" />
@@ -22,5 +22,6 @@
       <Label layoutX="176.0" layoutY="309.0" text="Librarian--L / Technician--T" />
       <TextField fx:id="dobText" layoutX="176.0" layoutY="235.0" prefWidth="250.0" />
       <Label layoutX="176.0" layoutY="260.0" text="(dd/mm/yyyy)" />
+      <Label fx:id="displayLabel" layoutX="301.0" layoutY="365.0" />
    </children>
 </AnchorPane>

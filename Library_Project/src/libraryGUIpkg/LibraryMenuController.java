@@ -4,6 +4,9 @@
  */
 package libraryGUIpkg;
 
+// Claims they are not being used for some reason.
+import Stuff.*;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,8 +26,10 @@ import javafx.stage.Stage;
  *
  * @author jjaws
  */
-// Need to figure out how to pass parameters to other windows.
+
 public class LibraryMenuController implements Initializable {
+    // Need to figure out how to pass parameters to other windows.
+    Stuff.Library library = new Stuff.Library();
 
     @FXML
     private Button newMember_btn;

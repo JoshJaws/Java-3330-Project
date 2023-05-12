@@ -4,10 +4,8 @@
  */
 package libraryGUIpkg;
 
-import Stuff.LibraryCollection;
-import Stuff.Library;
+import Stuff.*;
 import librarypackage.SSN;
-import Stuff.Librarian;
 
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -55,7 +53,7 @@ public class NewMemberFXController implements Initializable {
 
     @FXML
     private void saveMember_click(ActionEvent event) {
-
+        // Stub for how it should work
         String name = nameText.getText();
 
         String address = addressText.getText();
@@ -77,7 +75,7 @@ public class NewMemberFXController implements Initializable {
             displayLabel.setText("Invalid input!");
         }
 
-        System.out.print("Creating a new member...");
+        displayLabel.setText("Creating a new member...");
         try {
             Date DOB = new SimpleDateFormat("dd/MM/yyyy").parse(dob);
             if (memtype.equals("S") || memtype.equals("s")) {

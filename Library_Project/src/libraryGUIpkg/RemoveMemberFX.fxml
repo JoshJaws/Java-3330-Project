@@ -16,5 +16,6 @@
          </font>
       </Label>
       <Button layoutX="146.0" layoutY="241.0" mnemonicParsing="false" onAction="#removeMember_click" text="Remove Member" />
+      <Label fx:id="displayL" layoutX="260.0" layoutY="245.0" />
    </children>
 </AnchorPane>
