@@ -6,16 +6,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="libraryGUIpkg.RemoveMemberFXController">
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryGUIpkg.RemoveMemberFXController">
    <children>
       <TextField fx:id="nameText" layoutX="126.0" layoutY="138.0" prefWidth="225.0" />
       <Label layoutX="28.0" layoutY="142.0" text="Member Name:" />
-      <Label layoutX="28.0" layoutY="61.0" text="Enter the member you would like to remove:">
+      <Label layoutX="28.0" layoutY="56.0" text="Enter member name to remove:">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Button layoutX="146.0" layoutY="231.0" mnemonicParsing="false" onAction="#removeMember_click" text="Remove Member" />
+      <Button layoutX="146.0" layoutY="241.0" mnemonicParsing="false" onAction="#removeMember_click" text="Remove Member" />
    </children>
 </AnchorPane>

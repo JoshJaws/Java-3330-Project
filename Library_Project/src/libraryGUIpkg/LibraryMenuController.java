@@ -37,7 +37,7 @@ public class LibraryMenuController implements Initializable {
     }    
 
     @FXML
-    private void newMember_click(ActionEvent event) throws IOException {
+    private void newMember_click(ActionEvent event) {
         //theLabel.setText("Works");
         Parent root;
         try {
@@ -57,7 +57,7 @@ public class LibraryMenuController implements Initializable {
     }
 
     @FXML
-    private void newCollection_click(ActionEvent event) throws IOException {
+    private void newCollection_click(ActionEvent event) {
         Parent root;
         try {
             root = FXMLLoader.load(getClass().getResource("NewCollectionFX.fxml"));
@@ -101,10 +101,40 @@ public class LibraryMenuController implements Initializable {
 
     @FXML
     private void removeItem_click(ActionEvent event) {
+        Parent root;
+        try {
+            root = FXMLLoader.load(getClass().getResource("RemoveItemFX.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Remove Item Form");
+            stage.setScene(new Scene(root));
+            // Used to ensure the main menu cannot be clicked once new menu is opened.
+            stage.initModality(Modality.WINDOW_MODAL);
+            // Do not believe it matters what kind of button you use, as long as it is on the main menu.
+            stage.initOwner(newMember_btn.getScene().getWindow());
+            stage.show();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     private void newEmployee_click(ActionEvent event) {
+        Parent root;
+        try {
+            root = FXMLLoader.load(getClass().getResource("NewEmployeeFX.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("New Employee Form");
+            stage.setScene(new Scene(root));
+            // Used to ensure the main menu cannot be clicked once new menu is opened.
+            stage.initModality(Modality.WINDOW_MODAL);
+            // Do not believe it matters what kind of button you use, as long as it is on the main menu.
+            stage.initOwner(newMember_btn.getScene().getWindow());
+            stage.show();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

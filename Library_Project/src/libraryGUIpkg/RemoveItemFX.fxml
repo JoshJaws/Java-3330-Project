@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="libraryGUIpkg.RemoveItemFXController">
+   <children>
+      <TextField fx:id="sectionText" layoutX="126.0" layoutY="159.0" prefWidth="225.0" />
+      <TextField fx:id="titleText" layoutX="126.0" layoutY="98.0" prefWidth="225.0" />
+      <Label layoutX="34.0" layoutY="33.0" text="Enter item info to remove:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="102.0" text="Item Title:" />
+      <Label layoutX="26.0" layoutY="163.0" text="Item Section:" />
+      <Button layoutX="157.0" layoutY="252.0" mnemonicParsing="false" onAction="#removeItem_click" text="Remove Item" />
+   </children>
+</AnchorPane>
