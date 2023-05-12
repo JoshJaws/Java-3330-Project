@@ -19,11 +19,11 @@ import javafx.scene.control.TextField;
 public class BorrowItemFXController implements Initializable {
 
     @FXML
-    private TextField itemnameText;
-    @FXML
     private TextField sectionText;
     @FXML
-    private TextField memnameText;
+    private TextField itemNameText;
+    @FXML
+    private TextField memNameText;
 
     /**
      * Initializes the controller class.
