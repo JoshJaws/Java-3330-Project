@@ -1,4 +1,3 @@
-
 package libraryGUIpkg;
 
 import javafx.application.Application;
@@ -12,7 +11,7 @@ import javafx.stage.Stage;
  *
  * @author jjaws
  */
-public class Library extends Application {
+public class LibraryMain extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {

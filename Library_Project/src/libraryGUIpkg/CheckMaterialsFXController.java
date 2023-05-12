@@ -6,28 +6,25 @@ package libraryGUIpkg;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
 
 /**
  * FXML Controller class
  *
  * @author jjaws
  */
-public class NewCollectionFXController implements Initializable {
+public class CheckMaterialsFXController implements Initializable {
 
     @FXML
-    private TextField collectionText;
+    private Label artLabel;
     @FXML
-    private TextField titleText;
+    private Label scienceLabel;
     @FXML
-    private TextField ISBNText;
+    private Label newspaperLabel;
     @FXML
-    private TextField sectionText;
-    @FXML
-    private TextField priceText;
+    private Label lawLabel;
 
     /**
      * Initializes the controller class.
@@ -36,10 +33,5 @@ public class NewCollectionFXController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
-    @FXML
-    private void saveItem_click(ActionEvent event) {
-        
-    }
     
 }

@@ -13,7 +13,7 @@
       <Button layoutX="50.0" layoutY="158.0" mnemonicParsing="false" onAction="#newEmployee_click" prefWidth="500.0" text="New Employee" />
       <Button layoutX="50.0" layoutY="226.0" mnemonicParsing="false" onAction="#returnItem_click" prefWidth="500.0" text="Return Item" />
       <Button layoutX="50.0" layoutY="260.0" mnemonicParsing="false" onAction="#checkOverdues_click" prefWidth="500.0" text="Check Overdues" />
-      <Button layoutX="50.0" layoutY="295.0" mnemonicParsing="false" onAction="#editInformation_click" prefWidth="500.0" text="Edit Information" />
+      <Button layoutX="50.0" layoutY="295.0" mnemonicParsing="false" onAction="#checkMaterials_click" prefWidth="500.0" text="Check Materials" />
       <Button layoutX="50.0" layoutY="329.0" mnemonicParsing="false" onAction="#quit_click" prefWidth="500.0" text="Quit" />
    </children>
 </AnchorPane>

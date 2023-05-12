@@ -9,7 +9,6 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
 /**
@@ -26,11 +25,11 @@ public class NewEmployeeFXController implements Initializable {
     @FXML
     private TextField emailText;
     @FXML
-    private DatePicker dobDate;
-    @FXML
     private TextField ssnText;
     @FXML
     private TextField emptypeText;
+    @FXML
+    private TextField dobText;
 
     /**
      * Initializes the controller class.

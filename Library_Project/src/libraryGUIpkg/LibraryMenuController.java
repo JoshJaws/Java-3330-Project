@@ -7,6 +7,7 @@ package libraryGUIpkg;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,6 +23,7 @@ import javafx.stage.Stage;
  *
  * @author jjaws
  */
+// Need to figure out how to pass parameters to other windows.
 public class LibraryMenuController implements Initializable {
 
     @FXML
@@ -175,12 +177,29 @@ public class LibraryMenuController implements Initializable {
     private void checkOverdues_click(ActionEvent event) {
     }
 
-    @FXML
-    private void editInformation_click(ActionEvent event) {
-    }
 
     @FXML
     private void quit_click(ActionEvent event) {
+        Platform.exit();
+    }
+
+    @FXML
+    private void checkMaterials_click(ActionEvent event) {
+        Parent root;
+        try {
+            root = FXMLLoader.load(getClass().getResource("CheckMaterialsFX.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Material Information Form");
+            stage.setScene(new Scene(root));
+            // Used to ensure the main menu cannot be clicked once new menu is opened.
+            stage.initModality(Modality.WINDOW_MODAL);
+            // Do not believe it matters what kind of button you use, as long as it is on the main menu.
+            stage.initOwner(newMember_btn.getScene().getWindow());
+            stage.show();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     
 }

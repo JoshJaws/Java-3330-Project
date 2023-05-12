@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="libraryGUIpkg.CheckMaterialsFXController">
+   <children>
+      <Label layoutX="16.0" layoutY="10.0" text="Art Section:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="artLabel" layoutX="14.0" layoutY="43.0" prefHeight="143.0" prefWidth="251.0" text="Art Info" />
+      <Label layoutX="14.0" layoutY="200.0" text="Science Section:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="scienceLabel" layoutX="14.0" layoutY="222.0" prefHeight="160.0" prefWidth="251.0" text="Science Info" />
+      <Label layoutX="300.0" layoutY="10.0" text="Newspaper Section:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="202.0" text="Law Section:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="newspaperLabel" layoutX="300.0" layoutY="43.0" prefHeight="143.0" prefWidth="266.0" text="Newspaper Info" />
+      <Label fx:id="lawLabel" layoutX="297.0" layoutY="226.0" prefHeight="152.0" prefWidth="251.0" text="Law Info" />
+   </children>
+</AnchorPane>
