@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryGUIpkg.ReturnItemFXController">
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="libraryGUIpkg.ReturnItemFXController">
     <children>
       <TextField fx:id="itemNameText" layoutX="126.0" layoutY="138.0" prefWidth="225.0" />
       <TextField fx:id="sectionText" layoutX="126.0" layoutY="187.0" prefWidth="225.0" />
@@ -16,11 +15,11 @@
       <Label layoutX="37.0" layoutY="142.0" text="Item Name:" />
       <Label layoutX="33.0" layoutY="191.0" text="Item Section:" />
       <Label layoutX="126.0" layoutY="212.0" text="Art--A / Science--S / Law--L / Newspaper--N" />
-      <Label layoutX="26.0" layoutY="26.0" text="Enter member and item information to borrow:">
+      <Label layoutX="26.0" layoutY="26.0" text="Enter member and item information to return:">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Button layoutX="159.0" layoutY="261.0" mnemonicParsing="false" onAction="#borrowItem_click" text="Borrow Item" />
+      <Button layoutX="149.0" layoutY="261.0" mnemonicParsing="false" onAction="#ReturnItem_click" text="Return Item" />
    </children>
 </AnchorPane>
