@@ -25,7 +25,7 @@ import javafx.scene.control.TextField;
  */
 public class NewMemberFXController implements Initializable {
     // Need to be able to call this in the main and pass it to this window
-    Stuff.Library library = new Stuff.Library();
+    // Stuff.Library library = new Stuff.Library();
     
     @FXML
     private TextField nameText;
@@ -53,7 +53,7 @@ public class NewMemberFXController implements Initializable {
 
     @FXML
     private void saveMember_click(ActionEvent event) {
-        // Stub for how it should work
+/* Stub for how it should work
         String name = nameText.getText();
 
         String address = addressText.getText();
@@ -91,6 +91,7 @@ public class NewMemberFXController implements Initializable {
         // System.out.println("The membership ID is: " + library.getMember(name).getID());
         displayLabel.setText("New Member Successfully Saved to database.");
         // System.out.println("");
+*/
     }
-    
+
 }
