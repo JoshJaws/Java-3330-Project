@@ -35,7 +35,6 @@ public class LibraryMenuController implements Initializable {
     @FXML
     private Button newMember_btn;
 
-
     /**
      * Initializes the controller class.
      */
@@ -55,7 +54,7 @@ public class LibraryMenuController implements Initializable {
             stage.setScene(new Scene(root));
             // Used to ensure the main menu cannot be clicked once new menu is opened.
             stage.initModality(Modality.WINDOW_MODAL);
-            // Do not believe it matters what kind of button you use, as long as it is on the main menu.
+            // Does not matter what kind of button you use, as long as it is on the main menu.
             stage.initOwner(newMember_btn.getScene().getWindow());
             stage.show();
         }
